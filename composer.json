@@ -1,0 +1,20 @@
+{
+    "name": "itschool/lesson4",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Itschool\\Lesson4\\": "src/",
+            "Itschool\\Lesson4\\Example1\\": "src/example1/",
+            "Itschool\\Lesson4\\Example2\\": "src/example2/",
+            "Itschool\\Lesson4\\Example3\\": "src/example3/",
+            "Itschool\\Lesson4\\Example4\\": "src/example4/"
+        }
+    },
+    "authors": [
+        {
+            "name": "nurgisa",
+            "email": "apbaz.nurgisa@gmail.com"
+        }
+    ],
+    "require": {}
+}
