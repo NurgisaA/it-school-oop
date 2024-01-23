@@ -6,6 +6,7 @@ use Itschool\Lesson4\Example2\Animal;
 class Cat extends Animal {
 
     public function makeSound() {
-        echo "Meow!";
+        $name = $this->getName();
+        echo "Cat says <$name>: Meow!\n";
     }
 }

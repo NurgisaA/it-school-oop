@@ -1,6 +1,5 @@
 <?php
-
-namespace Nurgisa\Oop\example5;
+namespace Itschool\Lesson4\Example5;
 
 class Circle extends Shape {
     private $radius;

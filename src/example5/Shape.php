@@ -1,7 +1,7 @@
 <?php
-
-namespace Nurgisa\Oop\example5;
+namespace Itschool\Lesson4\Example5;
 
 abstract class Shape {
     abstract public function calculateArea();
+
 }

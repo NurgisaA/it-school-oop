@@ -2,9 +2,10 @@
 
 namespace Itschool\Lesson4\Example2;
 
-class Bat {
+class Bat extends Animal {
     use CanFly;
+
     public function makeSound() {
-        echo "Screech!";
+        echo "Screech!\n";
     }
 }

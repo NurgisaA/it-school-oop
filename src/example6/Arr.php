@@ -1,24 +1,24 @@
 <?php
 
-namespace Itschool\Lesson4\example6;
+namespace Itschool\Lesson4\Example6;
 
 class Arr
 {
-    private $numbers = []; // массив чисел
+    private array $numbers = []; // массив чисел
 
-    public function add($number)
+    public function add(float $number)
     {
         $this->numbers[] = $number;
         return $this; // вернем ссылку сами на себя
     }
 
-    public function push($numbers)
+    public function push(array $numbers)
     {
         $this->numbers = array_merge($this->numbers, $numbers);
         return $this; // вернем ссылку сами на себя
     }
 
-    public function getSum()
+    public function getSum(): float
     {
         return array_sum($this->numbers);
     }

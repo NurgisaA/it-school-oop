@@ -9,6 +9,10 @@ class ComposerStaticInit1dcb82531a0d3114f09ba6a0ee3e00fa
     public static $prefixLengthsPsr4 = array (
         'I' => 
         array (
+            'Itschool\\Lesson4\\Example8\\' => 26,
+            'Itschool\\Lesson4\\Example7\\' => 26,
+            'Itschool\\Lesson4\\Example6\\' => 26,
+            'Itschool\\Lesson4\\Example5\\' => 26,
             'Itschool\\Lesson4\\Example4\\' => 26,
             'Itschool\\Lesson4\\Example3\\' => 26,
             'Itschool\\Lesson4\\Example2\\' => 26,
@@ -18,6 +22,22 @@ class ComposerStaticInit1dcb82531a0d3114f09ba6a0ee3e00fa
     );
 
     public static $prefixDirsPsr4 = array (
+        'Itschool\\Lesson4\\Example8\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/example8',
+        ),
+        'Itschool\\Lesson4\\Example7\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/example7',
+        ),
+        'Itschool\\Lesson4\\Example6\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/example6',
+        ),
+        'Itschool\\Lesson4\\Example5\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/example5',
+        ),
         'Itschool\\Lesson4\\Example4\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src/example4',

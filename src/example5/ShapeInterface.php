@@ -1,6 +1,6 @@
 <?php
 
-namespace Nurgisa\Oop\example5;
+namespace Itschool\Lesson4\Example5;
 
 interface ShapeInterface {
     public function calculateArea();

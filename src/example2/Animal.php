@@ -2,14 +2,22 @@
 
 namespace Itschool\Lesson4\Example2;
 
-class Animal {
-    public string $name;
+abstract class Animal {
+    private string $name;
 
-    public function makeSound() {
-        echo "The animal makes a sound.";
+
+    abstract protected function makeSound():string;
+//    public function makeSound() {
+//        echo "The animal makes a sound.\n";
+//    }
+
+    public function setName(string $name): Animal
+    {
+        $this->name = $name;
+        return $this;
     }
 
-    public function gatName()
+    public function getName(): string
     {
         return $this->name;
     }

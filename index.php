@@ -1,13 +1,18 @@
 <?php
 
+use Itschool\Lesson4\Example7\Test;
+use Itschool\Lesson4\example7\User;
 
-include_once "./vendor/autoload.php";
-use Itschool\Lesson4\Example2\Bat;
-use Itschool\Lesson4\Example2\Cat;
-
-
-$bat = new Bat();
-
-$bat->fly();
+require_once "./vendor/autoload.php";
 
 
+$u = new User('name',  25);
+
+
+$u->name = "Nurgisa";
+$u->age = 123;
+
+echo $u;
+
+$u->age = -123;
+echo $u;
