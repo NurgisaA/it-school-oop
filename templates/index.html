@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+
+<body>
+    <div id="main">
+        <h1>
+            {{ title }}
+        </h1>
+        {% for task in tasks %}
+            - {{task}}
+            <br>
+        {% endfor %}
+
+        <!--форма для запроса создания задачи-->
+        <form action="tasks.php" method="post">
+            <label>
+                <input name="task_name" type="text">
+            </label>
+            <button type="submit">
+                add task
+            </button>
+        </form>
+
+
+    </div>
+</body>
+</html>
