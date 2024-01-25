@@ -1,6 +1,6 @@
 <?php
 
-namespace Itschool\Lesson4\example8;
+namespace Itschool\Lesson4\Example8;
 
 class TaskController
 {

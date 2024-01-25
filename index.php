@@ -1,18 +1,15 @@
 <?php
 
-use Itschool\Lesson4\Example7\Test;
-use Itschool\Lesson4\example7\User;
+use Itschool\Lesson4\Example8\TaskController;
+use Itschool\Lesson4\Example8\TaskModel;
+use Itschool\Lesson4\Example8\TaskView;
 
 require_once "./vendor/autoload.php";
 
+$model = new TaskModel();
+$view = new TaskView();
+$controller = new TaskController($model, $view);
 
-$u = new User('name',  25);
+$controller->addTask("Task 1");
 
-
-$u->name = "Nurgisa";
-$u->age = 123;
-
-echo $u;
-
-$u->age = -123;
-echo $u;
+$controller->updateView();
