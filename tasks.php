@@ -12,9 +12,12 @@ $model = new TaskModel();
 $view = new TaskView();
 $controller = new TaskController($model, $view);
 
+/**
+ * task_name
+ * @see templates/index.html:21
+ */
+$task_name = $_POST['task_name'];
 
-$controller->addTask("Task 1");
+$controller->addTask($task_name);
 
-
-$controller->updateView();
-
+header('Location: /');
