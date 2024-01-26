@@ -4,10 +4,19 @@ namespace Itschool\Lesson4\Example8;
 
 class TaskView {
     public function displayTasks(array $tasks) {
-        echo "<ul>";
-        foreach ($tasks as $task) {
-            echo "<li>$task</li>";
-        }
-        echo "</ul>";
+
+        $loader = new \Twig\Loader\FilesystemLoader('templates');
+        $twig = new \Twig\Environment($loader, [
+            'cache' => 'cache',
+            "debug" => true
+        ]);
+
+        $template = $twig->load('index.html');
+
+        $context = [
+          "tasks" => $tasks
+        ];
+        echo $template->render($context);
+
     }
 }
